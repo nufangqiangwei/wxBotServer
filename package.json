@@ -1,0 +1,21 @@
+{
+  "name": "openclaw-weixin-http",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Standalone HTTP service for Weixin bot APIs",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "node --watch --experimental-strip-types --enable-source-maps src/server.ts",
+    "start": "node --experimental-strip-types --enable-source-maps src/server.ts",
+    "test": "node --test --experimental-strip-types src/weixin/login.test.ts",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc -p tsconfig.json"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.8.0"
+  }
+}
